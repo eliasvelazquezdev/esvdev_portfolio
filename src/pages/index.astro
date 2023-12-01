@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Aside from "../components/Aside.astro";
+import Navigation from "../components/Navigation.astro";
 
 const pageTitle = "Inicio" 
 ---
@@ -9,9 +10,15 @@ const pageTitle = "Inicio"
     <div class="flex-row md:flex-row grid grid-cols-12 gap-4">    
         <Aside />
 
-
-        <main class="col-span-8"> 
+        
+        <main class="col-span-9 "> 
+            <Navigation />
             
+            <section class="p-3 border rounded">
+
+                <div id="parent-div">Target here</div>
+              
+            </section>
         </main>
     </div>
 
