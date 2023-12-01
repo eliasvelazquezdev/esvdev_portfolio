@@ -1,8 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Aside from "../components/Aside.astro";
+
 const pageTitle = "Inicio" 
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+    <div class="flex-row md:flex-row grid grid-cols-12 gap-4">    
+        <Aside />
+
+
+        <main class="col-span-8"> 
+            
+        </main>
+    </div>
 
 </BaseLayout>
