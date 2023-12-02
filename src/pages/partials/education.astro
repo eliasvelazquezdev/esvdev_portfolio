@@ -1,4 +1,31 @@
 ---
 export const partial = true;
+import { getCollection, getEntry } from 'astro:content';
+import CourseCard from '../../components/CourseCard.astro';
+
+const allCourses = await getCollection('courses');
 
 ---
+<div>
+    <img class="img-fluid rounded mb-3" src="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695177301/portfolio/Education_yxowtp.png" alt="Projects banner">
+    <div class="text-center mb-8">
+        <h4 class="font-bold text-base" style="color: #2a4f9d;">EN CONSTANTE APRENDIZAJE</h4>
+        <h2 class="text-2xl">Cursos y certificaciones</h2>
+    </div>
+
+    {
+        allCourses.map((course => (
+            <CourseCard 
+                img={course.data.image.url}
+                title={course.data.title}
+                subtitle={course.data.subtitle}
+                description={course.data.description}
+            />
+        )))
+    }
+
+    <p class="font-bold">Te invito a ver el resto de mis certificaciones haciendo click 
+        <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" class="hover:text-blue-700" target="_blank">aquí</a>
+    </p>
+
+</div>
