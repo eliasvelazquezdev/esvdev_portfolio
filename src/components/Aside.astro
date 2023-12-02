@@ -3,10 +3,10 @@ import Social from "../components/Social.astro";
 
 ---
 
-<aside class="col-span-3 mb-5">        
+<aside class="lg:col-span-3 col-span-12 mb-5">        
     <div class="mb-5">
         <div>
-            <img class=" border-white border-5 mb-3" src="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695074470/elias_pic_sep23_gnz0c3.png" width="300px" alt="Elias Velazquez's photo">
+            <img class="rounded-full border-4 mb-3" src="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695074470/elias_pic_sep23_gnz0c3.png" width="300px" alt="Elias Velazquez's photo">
             <div>
                 <h2 class="text-3xl">Elias Velazquez</h2>
                 <p class="font-light mb-2">Backend web developer</p>
@@ -14,7 +14,7 @@ import Social from "../components/Social.astro";
         </div>
         
         <a href="https://drive.google.com/file/d/1GsXaEMQbY6pS2e1EuEeG_4dHoySP_-TR/view?usp=drive_link" download target="_blank">
-            <button class="border-slate-100 rounded-lg p-2 mb-3 w-full bg-[#272b33] ">
+            <button class="border border-slate-100 rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
                 Descargar CV
             </button>
         </a>
@@ -27,8 +27,9 @@ import Social from "../components/Social.astro";
             
 
             <Social platform="github" username="eliasvelazquezdev" text="eliasvelazquezdev" iconClasses="fa-brands fa-github me-2 text-lg"/>
-            <Social platform="x" username="esvdev" text="@esvdev" iconClasses="fa-brands fa-x-twitter me-2 text-lg"/>
             <Social platform="linkedin" username="eliassvelazquez"  text="in/eliassvelazquez" iconClasses="fa-brands fa-linkedin me-2 text-lg"/>
+            <Social platform="x" username="esvdev" text="@esvdev" iconClasses="fa-brands fa-x-twitter me-2 text-lg"/>
+            <a class="text-slate-300" href="https://www.esvdev.me" target="_blank"><i class="fa-solid fa-blog me-2"></i>Blog</a>
 
         </div>
     </div>

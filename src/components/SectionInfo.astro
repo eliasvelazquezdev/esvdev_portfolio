@@ -1,0 +1,10 @@
+---
+const {banner, alt, subtitle, title} = Astro.props;
+import Separator from "../components/Separator.astro";
+---
+<img class="img-fluid rounded mb-3" src={banner} alt={alt}>
+    <div class="text-center mb-8">
+        <h4 class="font-bold text-base" style="color: #2a4f9d;">{subtitle}</h4>
+        <h2 class="text-3xl mb-3 font-bold">{title}</h2>
+        <Separator />
+    </div>

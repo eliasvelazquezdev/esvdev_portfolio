@@ -1,0 +1,7 @@
+---
+const {emojiCode, hobbieName, hobbieDescription} = Astro.props;
+---
+<div class="col-span-12 lg:col-span-6">
+    <h4 class="font-bold text-lg">{emojiCode} {hobbieName}</h4>
+    <p class="mb-3" set:html={hobbieDescription}></p>   
+</div>
