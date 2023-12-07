@@ -55,8 +55,17 @@
     </li>
 
     <li class="me-2 nav-item">
-        <a href="" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50">Contacts</a>
+      <a  href="" 
+          aria-current="page" 
+          class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50"
+          hx-post="/partials/contact/"
+                hx-trigger="click"
+                hx-target="#parent-div"
+                hx-swap="innerHTML transition:true"
+      >
+        Contacto
+      </a>
     </li>
-</ul>
+  </ul>
 
 </nav>
