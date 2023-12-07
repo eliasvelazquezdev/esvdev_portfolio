@@ -1,4 +1,4 @@
 ---
-const {imageURL, alt} = Astro.props;
+const {imageURL, alt, classes} = Astro.props;
 ---
-<img class="inline mb-5" src={imageURL} alt={alt}></img>
+<img class=`inline mb-5 ${classes}` src={imageURL} alt={alt}></img>

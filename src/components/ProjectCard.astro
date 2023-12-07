@@ -1,0 +1,50 @@
+---
+const {title, subtitle, description, repositoryURL, deployURL, techStack} = Astro.props;
+import Badge from "./Badge.astro";
+---
+
+<div class="max-w-sm p-6 mb-5 rounded-lg shadow bg-zinc-900 border border-gray-600 hover:bg-zinc-800 ">
+    <div class="mb-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">
+            {title}
+        </h5>
+
+        <p class="mb-2 italic text-gray-500">{subtitle}</p>
+
+        <p class="mb-3 font-normal">{description}</p>
+    </div>
+
+    <hr class="h-px my-5 border-0 bg-gray-700">
+
+    <div class="mb-5">
+        <p class="mb-2 font-bold">Tecnologías utilizadas</p>
+
+        <div>
+            {
+                techStack.map((tech => (
+                    <Badge imageURL={tech} classes="h-5 me-2"/>
+                )))
+            }
+
+        </div>
+        
+    </div>
+
+    <hr class="h-px my-5 border-0 bg-gray-700">
+
+    <a href={repositoryURL} target="_blank" class="inline-flex items-center px-3 py-2 mb-3 md:mb-0 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Repositorio
+        <i class="fa-brands fa-github ms-2"></i>
+    </a>
+
+
+    {   
+        deployURL != undefined ? 
+        <a href={deployURL} target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Deploy
+            <i class="fa-solid fa-link ms-2"></i>
+        </a>
+        :
+        <span></span>
+    }
+</div>

@@ -1,6 +1,10 @@
 ---
 export const partial = true;
 import SectionInfo from "../../components/SectionInfo.astro";
+import { getCollection } from 'astro:content';
+import ProjectCard from "../../components/ProjectCard.astro";
+
+const allProjects = await getCollection('projects');
 
 ---
 <div>
@@ -10,4 +14,19 @@ import SectionInfo from "../../components/SectionInfo.astro";
         subtitle="EXPERIENCIA PRÁCTICA APLICADA"
         title="Proyectos"
     />
+
+    <div class="flex flex-col md:flex-row justify-between">
+        {
+            allProjects.map((project => (
+                <ProjectCard
+                    title={project.data.title}
+                    subtitle={project.data.subtitle}
+                    description={project.data.description}
+                    repositoryURL={project.data.repositoryURL}
+                    deployURL={project.data.deployURL}
+                    techStack={project.data.techStack}
+                />
+            )))
+        }
+    </div>
 </div>
