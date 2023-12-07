@@ -21,6 +21,8 @@ const {pageTitle} = Astro.props;
 		<meta property='og:image:height' content='627' />
 		<!-- HTMX -->
 		<script src="../htmx/htmx.min.js"></script>
+		<!-- JQuery -->
+		<script is:inline src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 		<!-- Google Font -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,500&display=swap');
@@ -35,5 +37,12 @@ const {pageTitle} = Astro.props;
         <slot />
 
         <Footer />
+
+		<script>
+			jQuery('.nav-item').on('click',function(){
+  				jQuery(this).children().addClass('text-blue-600 bg-gray-100');
+  				jQuery(this).siblings().children().removeClass('text-blue-600 bg-gray-100');
+			})	
+		</script>
 	</body>
 </html>
