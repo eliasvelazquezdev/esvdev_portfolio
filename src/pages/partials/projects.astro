@@ -15,7 +15,7 @@ const allProjects = await getCollection('projects');
         title="Proyectos"
     />
 
-    <div class="flex flex-col md:flex-row justify-between">
+    <div class="flex flex-col justify-between">
         {
             allProjects.map((project => (
                 <ProjectCard
