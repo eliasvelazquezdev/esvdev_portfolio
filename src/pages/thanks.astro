@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Aside from "../components/Aside.astro";
+import Navigation from "../components/Navigation.astro";
+
+const pageTitle = "Portfolio" 
+---
+
+
+
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="flex-row md:flex-row grid grid-cols-12 gap-4">    
+        <Aside />
+
+        
+        <main class="md:col-span-9 col-span-12"> 
+            
+            <section class="p-3 lg:p-8 border rounded md:min-h-screen">
+
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold">¡Gracias por contactarme!</h2>
+                    <p class="font-bold text-xl">Te responderé a la brevedad a la dirección de correo proporcionada.</p>
+                    <p class="italic text-gray-400 font-light mb-10">Si por alguna razón no respondo en un tiempo razonable, te invito a reenviar tu mensaje o contactarme a través de mis redes sociales.</p>
+
+                    <p class="underline underline-offset-4 text-blue-600"><a href="https://www.evelazquez.dev" >Volver al inicio</a></p>
+                </div>
+              
+            </section>
+        </main>
+    </div>
+
+</BaseLayout>
