@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
 
   
-  
+  site: 'https://www.evelazquez.dev'
 
   i18n: {
     defaultLocale: "en",
