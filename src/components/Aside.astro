@@ -14,7 +14,7 @@ const url = Astro.url.pathname;
             </div>
         </div>
         
-        <a href="https://drive.google.com/file/d/1GsXaEMQbY6pS2e1EuEeG_4dHoySP_-TR/view?usp=drive_link" download target="_blank">
+        <a href={url == '/es'? 'https://asset.cloudinary.com/dwczjy8e4/1a5733307e187e11f7bc759cbf056da9' : 'https://asset.cloudinary.com/dwczjy8e4/e9167ebed4450f429d9a4e7283a63f99'} download target="_blank">
             <button class="border border-slate-100 rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
                 {url == '/es' ? 'Descargar CV' : 'Download resume'}
             </button>
