@@ -4,7 +4,9 @@ import { getCollection } from 'astro:content';
 import CourseCard from '../../components/CourseCard.astro';
 import SectionInfo from "../../components/SectionInfo.astro";
 
-const allCourses = await getCollection('courses');
+const englishCourseEntries = await getCollection('courses', ({ id }) => {
+  return id.startsWith('en/');
+});
 
 ---
 <div>
@@ -16,7 +18,7 @@ const allCourses = await getCollection('courses');
     />
 
     {
-        allCourses.map((course => (
+        englishCourseEntries.map((course => (
             <CourseCard 
                 img={course.data.image.url}
                 title={course.data.title}

@@ -1,5 +1,5 @@
 ---
-title: 'Python Course'
+title: 'Curso de Python 3'
 subtitle: 'Udemy - 2021'
 image:
     url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/udemy_qfxmgg.svg"
