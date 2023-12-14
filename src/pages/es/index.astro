@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Aside from "../../components/Aside.astro";
+import Navigation from "../../components/Navigation.astro";
+
+import { getAbsoluteLocaleUrl } from 'astro:i18n';
+
+const pageTitle = "Portfolio" 
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="flex-row md:flex-row grid grid-cols-12 gap-4">    
+        <Aside />
+
+        
+        <main class="md:col-span-9 col-span-12"> 
+            <Navigation />
+            
+            <section class="p-3 lg:p-8 border rounded md:min-h-screen">
+
+                <div    id="parent-div" 
+                        hx-get={getAbsoluteLocaleUrl("es", "welcome", {
+                            prependWith: "partials"
+                          })} 
+                        hx-trigger="load">
+                </div>
+              
+            </section>
+        </main>
+    </div>
+
+</BaseLayout>

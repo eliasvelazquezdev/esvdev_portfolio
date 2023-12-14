@@ -1,0 +1,33 @@
+---
+export const partial = true;
+import { getCollection } from 'astro:content';
+import CourseCard from '../../../components/CourseCard.astro';
+import SectionInfo from '../../../components/SectionInfo.astro';
+
+const allCourses = await getCollection('courses');
+
+---
+<div>
+    <SectionInfo 
+        banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695177301/portfolio/Education_yxowtp.png"
+        alt="Imagen con notebook y una mano sosteniendo una lapicera, apoyada sobre un anotador"
+        subtitle="EN CONSTANTE APRENDIZAJE"
+        title="Cursos y certificaciones"
+    />
+
+    {
+        allCourses.map((course => (
+            <CourseCard 
+                img={course.data.image.url}
+                title={course.data.title}
+                subtitle={course.data.subtitle}
+                description={course.data.description}
+            />
+        )))
+    }
+
+    <p class="font-bold">Te invito a ver el resto de mis certificaciones haciendo click 
+        <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" class="hover:text-blue-700" target="_blank">aquí</a>
+    </p>
+
+</div>

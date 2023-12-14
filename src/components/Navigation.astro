@@ -1,4 +1,8 @@
 ---
+import { getAbsoluteLocaleUrl, getAbsoluteLocaleUrlList } from 'astro:i18n';
+
+const url = Astro.url.pathname;
+
 ---
 <nav class="nav-links">
   <ul class="nav-tabs flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
@@ -6,12 +10,18 @@
         <a  href="" 
             aria-current="page" 
             class="inline-block p-4 rounded-t-lg active text-blue-600 bg-gray-100 hover:text-gray-600 hover:bg-gray-50"
-            hx-get="/partials/welcome/"
-                  hx-trigger="click"
-                  hx-target="#parent-div"
-                  hx-swap="innerHTML transition:true"
+            hx-get={
+              url == '/es' ? getAbsoluteLocaleUrl("es", "welcome", {
+                            prependWith: "partials"
+                          })
+              :
+              "/partials/welcome"
+            }
+            hx-trigger="click"
+            hx-target="#parent-div"
+            hx-swap="innerHTML transition:true"
         >
-          Inicio
+          {url == '/es' ? 'Inicio' : 'Home'}
         </a>
     </li>
 
@@ -19,12 +29,18 @@
         <a  href="" 
             aria-current="page" 
             class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50"
-            hx-get="/partials/projects/"
-                  hx-trigger="click"
-                  hx-target="#parent-div"
-                  hx-swap="innerHTML transition:true"
+            hx-get={
+              url == '/es' ? getAbsoluteLocaleUrl("es", "projects", {
+                            prependWith: "partials"
+                          })
+              :
+              "/partials/projects"
+            }
+            hx-trigger="click"
+            hx-target="#parent-div"
+            hx-swap="innerHTML transition:true"
         >
-          Proyectos
+        {url == '/es' ? 'Proyectos' : 'Projects'}
         </a>
     </li>
 
@@ -32,12 +48,18 @@
         <a  href="" 
             aria-current="page" 
             class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50"
-            hx-get="/partials/education/"
-                  hx-trigger="click"
-                  hx-target="#parent-div"
-                  hx-swap="innerHTML transition:true"
+            hx-get={
+              url == '/es' ? getAbsoluteLocaleUrl("es", "education", {
+                            prependWith: "partials"
+                          })
+              :
+              "/partials/education"
+            }
+            hx-trigger="click"
+            hx-target="#parent-div"
+            hx-swap="innerHTML transition:true"
         >
-          Educación
+        {url == '/es' ? 'Educación' : 'Education'}
         </a>
     </li>
 
@@ -45,12 +67,18 @@
         <a  href="" 
             aria-current="page" 
             class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50"
-            hx-get="/partials/about/"
-                  hx-trigger="click"
-                  hx-target="#parent-div"
-                  hx-swap="innerHTML transition:true"
+            hx-get={
+              url == '/es' ? getAbsoluteLocaleUrl("es", "about", {
+                            prependWith: "partials"
+                          })
+              :
+              "/partials/about"
+            }
+            hx-trigger="click"
+            hx-target="#parent-div"
+            hx-swap="innerHTML transition:true"
         >
-          Sobre mí
+        {url == '/es' ? 'Sobre mí' : 'About'}
         </a>
     </li>
 
@@ -58,12 +86,18 @@
       <a  href="" 
           aria-current="page" 
           class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50"
-          hx-get="/partials/contact/"
-                hx-trigger="click"
-                hx-target="#parent-div"
-                hx-swap="innerHTML transition:true"
+          hx-get={
+            url == '/es' ? getAbsoluteLocaleUrl("es", "contact", {
+                          prependWith: "partials"
+                        })
+            :
+            "/partials/contact"
+          }
+          hx-trigger="click"
+          hx-target="#parent-div"
+          hx-swap="innerHTML transition:true"
       >
-        Contacto
+      {url == '/es' ? 'Contacto' : 'Contact'}
       </a>
     </li>
   </ul>

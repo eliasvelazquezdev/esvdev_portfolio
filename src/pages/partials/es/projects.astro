@@ -1,0 +1,32 @@
+---
+export const partial = true;
+import SectionInfo from "../../../components/SectionInfo.astro";
+import { getCollection } from 'astro:content';
+import ProjectCard from "../../../components/ProjectCard.astro";
+
+const allProjects = await getCollection('projects');
+
+---
+<div>
+    <SectionInfo 
+        banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695177301/portfolio/Projects_a9z7tr.png"
+        alt="Imagen con una mano tecleando en una computadora portátil"
+        subtitle="EXPERIENCIA PRÁCTICA APLICADA"
+        title="Proyectos"
+    />
+
+    <div class="flex flex-col justify-between">
+        {
+            allProjects.map((project => (
+                <ProjectCard
+                    title={project.data.title}
+                    subtitle={project.data.subtitle}
+                    description={project.data.description}
+                    repositoryURL={project.data.repositoryURL}
+                    deployURL={project.data.deployURL}
+                    techStack={project.data.techStack}
+                />
+            )))
+        }
+    </div>
+</div>

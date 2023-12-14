@@ -1,0 +1,65 @@
+---
+export const partial = true;
+import SectionInfo from "../../components/SectionInfo.astro";
+import Separator from "../../components/Separator.astro";
+import Hobbies from "../../components/Hobbies.astro";
+
+---
+<div>
+    <SectionInfo 
+        banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695182467/portfolio/About_r5lgyv.png"
+        alt="Imagen con anteojos, una libreta, una lapicera y una notebook"
+        subtitle="MI HISTORIA"
+        title="Sobre mí"
+    />
+
+    <p class="mb-5">Tras estudiar enfermería por 1 año y medio, y al ver que no era para mí, en 2021 decidí retomar un camino que había transitado brevemente en mi época de secundaria: la programación. Siempre me gustaron las computadoras y todo lo que se podía hacer con ellas. A mis 16 años entré en contacto con mi primer lenguaje, <span class="font-bold">C++</span>. No voy a dibujar la situación. Me fue un espanto. Pero recuerdo que parte de mí pensaba que era como hacer magia. Escribir todas esas letras, palabras y símbolos raros me permitía decirle a la computadora qué hacer y qué no.</p>
+
+    <p class="mb-5">Pero esa experiencia quedaría ahí. Al terminar la secundaria comenzaría a trabajar durante varios años y no sería hasta el 2021 donde volvería a entrar en contacto con este mundo a través de mi segundo lenguaje: <span class="font-bold">Python</span>. Claro, no me acordaba nada de C++, pero sí recordaba que teclear en la compu era algo a lo que ya estaba acostumbrado (sí, adivinaste: tecleaba jugando videojuegos, una de mis grandes pasiones).</p>
+
+    <p class="mb-5">Volví a sentir esa magia de la que hablé antes. Me encantó la facilidad de la sintaxis de Python, su legibilidad y facilidad de aprendizaje. Así comencé este viaje donde soy alumno y la mayoría de veces mi propio maestro, y es hasta el día de la fecha (Septiembre de 2023 al momento de escribir estas líneas) donde sigo esforzándome por aprender y practicar lo aprendido.</p>
+
+    <p class="mb-5">Aun así, no olvido los conocimientos que he adquirido durante mis estudios de enfermería. No quiero ahondar en los motivos que me llevaron a abandonar la carrera, pero sí sobre la razón por la cual empecé: <span class="font-bold">ayudar a los demás</span>. Si hay algo que me apasiona hacer es poner mis conocimientos al servicio de otros, no importa el campo o especialidad.</p>
+
+    <p class="mb-5">Estoy convencido de que la programación me permitirá hacer justamente eso. Mi objetivo actual es conseguir mi lugar en la industria IT para lo cual me capacito y preparo constantemente.</p>
+
+    <p class="text-lg font-light italic">Conseguir mi primer empleo formal es tan solo el primero de muchos pasos hasta lograr mi sueño: contribuir a la comunidad en el área de la salud a través de la tecnología, combinando ambos mundos.</p>
+
+    <Separator />
+
+    <section>
+        <h3 class="text-2xl mb-5 font-bold">Lo que me encanta hacer</h2>
+
+        <div class="grid grid-cols-12 gap-4">        
+            <Hobbies 
+                hobbieName="🎮 Videojuegos"
+                hobbieDescription='Uno de mis grandes hobbies desde bien chiquitito. Voy a decir algo que ya es medio de "viejo", pero mi primera consola fue el famoso "family". El Mario Bros., mi primer gran vicio. El Sonic 1, el verdadero viaje de ida.'
+            />
+
+            <Hobbies 
+                hobbieName="🎹 Música"
+                hobbieDescription='Para mí, la vida sin música no es vida. Fanático total de la música de los 80 y 90. A veces me pregunto si no nací en la época equivocada. Aparte del teclado de la compu, el teclado musical es mi otra gran pasión. Actualmente tengo tres y de hecho me podes encontrar en <a class="text-blue-700" href="https://www.youtube.com/@rj8mp" target="_blank" class="text-decoration-none">YouTube</a> haciendo ruido con ellos.'
+            />
+
+            <Hobbies 
+                hobbieName="🎨 Diseño gráfico"
+                hobbieDescription="Ya que no tengo plata para pagarle a un diseñador gráfico para mi canal de YouTube, decidi hacerme cargo de ese apartado, y admito que le tomé cariño a la actividad. No es precisamente una de mis fortalezas, a fin de cuentas lo hago para entretenerme. Aunque tampoco soy malo eh. Al menos eso quiero creer. Dios te bendiga, Canva Pro."
+            />
+
+            <Hobbies 
+                hobbieName="🚶‍♂️ Caminar"
+                hobbieDescription="Realmente una de las cosas que más me despeja y contribuye a mi paz mental. Nada como pasear por el parque para sacarme la frustración de los bugs del proyecto de turno, de Django y sus errores misteriosos o el Postman haciendo lo que quiere (bueno, no lo que quiere, pero prefiero echarle la culpa)."
+            />
+
+            <Hobbies 
+                hobbieName="📖 Leer"
+                hobbieDescription="No leo tanto como antes. Bueno, mejor dicho, ahora leo más documentación que libros en formato físico. Pero cada tanto me gusta perderme entre las hojas de algunos de los libros que tengo a mano. ¿Mi libro de cabecera? Las 12 reglas del genial Jordan Peterson."
+            />
+
+            <Hobbies 
+                hobbieName="✍ Escribir"
+                hobbieDescription='Siempre me causó mucha gracia la típica escena de "Querido diario...". Pero resulta que hay cierto beneficio en escribir, en descargar tu mente sobre el papel (físico o digital). En mi caso realmente me calma la cabeza y me permite expresarme. O hasta incluso me permite pensar mejor al momento de resolver algún problema. Aparte de llenar un cuaderno que tengo por ahí con mis pensamientos, también escribo en mi blog, que lo podés visitar <a class="text-blue-700" href="https://esvdev.me" target="_blank" class="text-decoration-none">con este enlace</a>.'
+            />
+        </div>
+    </section>
+</div>
