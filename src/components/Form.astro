@@ -1,12 +1,14 @@
 ---
-const email = 'evelazquez2604@gmail.com';
-const encodedEmail = encodeURIComponent(email);
-const emailurl = `https://formsubmit.co/${encodedEmail}`;
 const url = Astro.url.pathname;
 ---
-<form method="POST" id="form" action={emailurl} class="max-w-md mx-auto">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_subject" value="Nuevo mensaje desde portfolio!">
+<form id="ajaxForm" class="max-w-md mx-auto" action="https://formspree.io/f/mgegwwlv" method='POST'>
+  <input type="text" name="_gotcha" style="display:none" />
+  {url.includes('es') ?
+    <input type="hidden" name="_language" value="es" />
+    :
+    <input type="hidden" name="_language" value="en" />
+
+  }
 
   <div class="relative z-0 w-full mb-5 group">
       <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-200 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
