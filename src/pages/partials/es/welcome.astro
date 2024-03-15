@@ -2,7 +2,7 @@
 export const partial = true;
 import SectionInfo from "../../../components/SectionInfo.astro";
 import Separator from "../../../components/Separator.astro";
-import Badge from "../../../components/Badge.astro";
+import WelcomeTechStack from "../../../components/WelcomeTechStack.astro";
 ---
 <div>
     <SectionInfo 
@@ -13,7 +13,7 @@ import Badge from "../../../components/Badge.astro";
 
     <p class="mb-3">Programador Python con una sólida base en algoritmos, estructuras de datos y resolución lógica de problemas, centrado en ofrecer resultados tangibles. Mis habilidades se extienden a tareas relacionadas con el backend y los datos, lo que me permite contribuir de manera efectiva en distintos proyectos.</p>
 
-    <p class="mb-3">Me destaco por priorizar un código limpio y bien organizado, adhiriéndome a las convenciones de commit de Git y documentando meticulosamente tanto mi código como mi flujo de trabajo.</p>
+    <p class="mb-3">Me destaco por priorizar un código limpio y bien organizado, adhiriéndome a las convenciones de commit de Git, principios como SOLID, KISS y DRY entre otros. Documentar meticulosamente tanto mi código como mi flujo de trabajo se ha convertido en una práctica estándar para mí, siendo parte de mi ética de trabajo.</p>
 
     <p class="mb-3">Me gusta prestar atención a los detalles, sabiendo que comprender correctamente los requisitos del cliente garantiza que proporcione una solución sólida a sus necesidades a través del código. Soy altamente proactivo en la comunicación en equipo, siempre informando a mis colegas sobre en qué estoy trabajando o dónde enfrento desafíos en el desarrollo de una característica particular. Sé cuándo resolver las cosas por mi cuenta y cuándo pedir ayuda.</p>
 
@@ -25,85 +25,12 @@ import Badge from "../../../components/Badge.astro";
 
     <Separator />
 
-    <div class="mb-3">
-        <h4 class="font-bold text-2xl mb-5">Lenguajes, frameworks & herramientas</h4>
-
-        <!-- Python -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg" alt="Python logo"/>
-
-        <!-- Django  -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Django/django1.svg" alt="Django framework logo"/>
-
-        <!-- Django REST -->
-        <Badge imageURL="https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray" alt="Django REST framework logo"/>
-        
-        <!-- PostgreSQL -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/PostgreSQL/postgresql1.svg" alt="PostgreSQL logo"/>
-
-        <!-- SQLite -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/SQLite/sqlite1.svg" alt="SQLite logo"/>
-
-        <!-- Postman -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Postman/postman1.svg" alt="Postman logo"/>
-
-        <!-- Astro -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Astro/astro2.svg" alt="Astro framework logo"/>
-
-        <!-- Tailwind -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg" alt="Tailwind CSS framework logo"/>
-
-
-        
-    </div>
-
-    <div class="mb-6">
-        <h4 class="font-bold text-2xl mb-5">Actualmente estoy aprendiendo</h4>
-
-        <!-- AWS -->
-        <Badge imageURL="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="Amazon Web Services logo" />
-
-        <!-- Pandas -->
-        <Badge imageURL="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas logo"/>
-
-        <!-- Java -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java1.svg" alt="Java logo" />
-
-
-
-
-    </div>
-
-    <div class="mb-6">
-        <h4 class="font-bold text-2xl mb-5">Lo que sigue en mi ruta de aprendizaje</h4>
-
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docker/docker1.svg" alt="Docker logo"/>
-        
-    </div>
-
-    <div class="mb-6">
-        <h4 class="font-bold text-2xl mb-5">Otras herramientas</h4>
-
-        <!-- GIT -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg" alt="GIT logo"/>
-        
-        <!-- Linux  -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Linux/linux2.svg" alt="Linux logo"/>
-        
-        <!-- Shell  -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Shell/shell1.svg" alt="Shell logo"/>
-        
-        <!-- Visual Studio Code -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/VisualStudioCode/visualstudiocode1.svg" alt="Visual Studio Code logo"/>
-
-        <!-- Slack -->
-        <Badge imageURL="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack logo"/>
-
-        <!-- Trello -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Trello/trello1.svg" alt="Trello logo"/>
-
-        <!-- Notion -->
-        <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Notion/notion2.svg" alt="Notion logo"/>
-    </div>
+    <WelcomeTechStack 
+        title1="Lenguajes, frameworks y herramientas"
+        title2="Actualmente estoy aprendiendo"
+        title3="Lo que sigue en mi ruta de aprendizaje"
+        title4="Otras herramientas"
+    />
     
     
 </div>
