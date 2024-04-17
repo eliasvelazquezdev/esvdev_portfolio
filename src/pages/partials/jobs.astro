@@ -1,0 +1,33 @@
+---
+export const partial = true;
+import SectionInfo from "../../components/SectionInfo.astro";
+import { getCollection } from 'astro:content';
+import JobCard from "../../components/JobCard.astro";
+
+const englishJobEntries = await getCollection('jobs', ({ id }) => {
+  return id.startsWith('en/');
+});
+
+---
+<div>
+    <SectionInfo 
+        banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1713385682/portfolio/1-work_experience_zew2ic.png"
+        alt="People working with a notebook and discussing topics in a work environment"
+        subtitle="PROFESSIONAL HISTORY"
+        title="Work Experience"
+    />
+
+    <div class="flex flex-col justify-between">
+        {
+            englishJobEntries.map((job => (
+                <JobCard
+                    title={job.data.title}
+                    subtitle={job.data.subtitle}
+                    description={job.data.description}
+                    tasksList={job.data.tasksList}
+                    techStack={job.data.techStack}
+                />
+            )))
+        }
+    </div>
+</div>

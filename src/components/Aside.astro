@@ -14,7 +14,13 @@ const url = Astro.url.pathname;
             </div>
         </div>
         
-        <a href={url.includes('es') ? 'https://asset.cloudinary.com/dwczjy8e4/1a5733307e187e11f7bc759cbf056da9' : 'https://asset.cloudinary.com/dwczjy8e4/e9167ebed4450f429d9a4e7283a63f99'} download target="_blank">
+        <a href={
+            url.includes('es') ? 
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1713384127/resume/Elias%20Velazquez%20-%20Python%20Dev%20-%202024%20%28ES%29.pdf' 
+                : 
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1713384127/resume/Elias%20Velazquez%20-%20Python%20Dev%20-%202024%20%28EN%29.pdf'
+        } 
+        download target="_blank">
             <button class="border border-slate-100 rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
                 {url.includes('es') ? 'Descargar CV' : 'Download resume'}
             </button>
