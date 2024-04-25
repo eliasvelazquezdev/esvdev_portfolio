@@ -7,7 +7,7 @@ tasksList: [
     "Software solutions development with Python",
     "Data extraction, transformation, and loading (ETL)",
     "Data pipelines",
-    "AWS serverless services implementation and monitorization",
+    "Solutions on AWS leveraging various serverless services",
     "Code refactoring and documentation",
     "Communication with clients."
 ]
@@ -22,5 +22,6 @@ techStack : [
     "https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Trello/trello1.svg"
 ]
+techLegend : "Languages and tools used"
 ---
 

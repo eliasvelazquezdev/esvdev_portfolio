@@ -27,6 +27,7 @@ const englishProjectEntries = await getCollection('projects', ({ id }) => {
                     repositoryURL={project.data.repositoryURL}
                     deployURL={project.data.deployURL}
                     techStack={project.data.techStack}
+                    techLegend={project.data.techLegend}
                 />
             )))
         }

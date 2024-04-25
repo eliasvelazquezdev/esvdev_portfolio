@@ -1,10 +1,11 @@
 ---
-const {title, subtitle, description, repositoryURL, deployURL, techStack} = Astro.props;
+const {title, subtitle, description, repositoryURL, deployURL, techStack, techLegend} = Astro.props;
 import Badge from "./Badge.astro";
 const url = Astro.url.pathname;
+console.log(url)
 ---
 
-<div class=" p-6 mb-5 rounded-lg shadow bg-zinc-900 border border-gray-600 hover:bg-zinc-800 ">
+<div class=" p-6 mb-5 rounded-lg shadow bg-zinc-800 border border-gray-600">
     <div class="mb-5">
         <h5 class="mb-2 text-2xl font-bold tracking-tight">
             {title}
@@ -18,7 +19,7 @@ const url = Astro.url.pathname;
     <hr class="h-px my-5 border-0 bg-gray-700">
 
     <div class="mb-5">
-        <p class="mb-2 font-bold">{url == '/es' ? 'Tecnologías utilizadas' : 'Built with'}</p>
+        <p class="mb-2 font-bold">{techLegend}</p>
 
         <div>
             {

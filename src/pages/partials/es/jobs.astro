@@ -26,6 +26,7 @@ const spanishJobEntries = await getCollection('jobs', ({ id }) => {
                     description={job.data.description}
                     tasksList={job.data.tasksList}
                     techStack={job.data.techStack}
+                    techLegend={job.data.techLegend}
                 />
             )))
         }

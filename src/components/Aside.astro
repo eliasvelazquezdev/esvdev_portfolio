@@ -16,12 +16,12 @@ const url = Astro.url.pathname;
         
         <a href={
             url.includes('es') ? 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1713384127/resume/Elias%20Velazquez%20-%20Python%20Dev%20-%202024%20%28ES%29.pdf' 
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1714084462/resume/Elias_Velazquez_-_Python_Dev_-_2024_ES_okpsww.pdf' 
                 : 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1713384127/resume/Elias%20Velazquez%20-%20Python%20Dev%20-%202024%20%28EN%29.pdf'
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1714084462/resume/Elias_Velazquez_-_Python_Dev_-_2024_EN_lrstnb.pdf'
         } 
         download target="_blank">
-            <button class="border border-slate-100 rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
+            <button class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
                 {url.includes('es') ? 'Descargar CV' : 'Download resume'}
             </button>
         </a>
@@ -32,14 +32,13 @@ const url = Astro.url.pathname;
                 <span>Buenos Aires, Argentina</span>
             </div>
             
-
             <Social platform="github" username="eliasvelazquezdev" text="eliasvelazquezdev" iconClasses="fa-brands fa-github me-2 text-lg"/>
             <Social platform="linkedin" username="eliassvelazquez"  text="in/eliassvelazquez" iconClasses="fa-brands fa-linkedin me-2 text-lg"/>
             <Social platform="x" username="esvdev" text="@esvdev" iconClasses="fa-brands fa-x-twitter me-2 text-lg"/>
             <a class="text-slate-300" href="https://www.esvdev.me" target="_blank"><i class="fa-solid fa-blog me-2"></i>Blog</a>
-
         </div>
     </div>
     
     <hr>
+    
 </aside>

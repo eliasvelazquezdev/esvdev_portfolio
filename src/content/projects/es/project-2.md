@@ -5,4 +5,5 @@ description : 'Mi blog personal, construido con Django, Django REST y Wagtail CM
 repositoryURL : 'https://github.com/eliasvelazquezdev/esvdev_blog'
 deployURL: 'http://www.esvdev.me/'
 techStack : ["https://ziadoua.github.io/m3-Markdown-Badges/badges/Django/django1.svg", "https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray", "https://ziadoua.github.io/m3-Markdown-Badges/badges/SQLite/sqlite1.svg","https://ziadoua.github.io/m3-Markdown-Badges/badges/NGINX/nginx1.svg", "https://ziadoua.github.io/m3-Markdown-Badges/badges/Astro/astro2.svg", "https://ziadoua.github.io/m3-Markdown-Badges/badges/TailwindCSS/tailwindcss1.svg"]
+techLegend : "Tecnologías utilizadas"
 ---
