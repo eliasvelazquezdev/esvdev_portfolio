@@ -1,8 +1,8 @@
 ---
-title: 'Curso de Python 3'
-subtitle: 'Udemy - 2021'
+title: 'Bootcamp desarrollo web Full Stack'
+subtitle: 'Fundación Pescar - 2022'
 image:
-    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/udemy_qfxmgg.svg"
-    alt: 'Logo de Udemy'
-description : 'Fundamentos del lenguaje | Programación orientada a objetos | Modularización | Funciones generadores y decoradoras | Manejo de archivos'
+    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/pescar_ar2t1b.svg"
+    alt: 'Logo de Fundación Pescar'
+description : 'Maquetación web con HTML, CSS y JavaScript | Control de versiones con GIT y GitHub | Introducción a Mongo DB | Desarrollo backend con Node.js | Desarrollo frontend con React.js | Desarrollo de habilidades interpersonales y comunicacionales'
 ---

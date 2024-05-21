@@ -1,8 +1,8 @@
 ---
-title: 'Django Web Framework'
-subtitle: 'Coursera - 2023'
+title: 'Bootcamp Backend con Python'
+subtitle: 'Codigo Facilito - 2023'
 image:
-    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/coursera_o3hmht.svg"
-    alt: 'Logo de Coursera'
-description : 'Fundamentos de Django | Autenticación y permisos | Panel de administrador | Formularios | Templates y herencia | Modelos | Optimizacion de querysets | Modularizacion de archivo settings'
+    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/cfacilito_ddr2ff.svg"
+    alt: 'Cody, mascota de Codigo Facilito'
+description : 'Diseño y normalización de base de datos | Flask | Django | Servicios web con Django REST | Pruebas unitarias | Integracion con AWS | Despliegue en servidor remoto | Automatización de tareas.'
 ---

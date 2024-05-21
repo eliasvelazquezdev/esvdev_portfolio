@@ -1,8 +1,8 @@
 ---
-title: 'Python Backend Bootcamp'
-subtitle: 'Codigo Facilito - 2023'
+title: 'Associate Data Engineering in SQL'
+subtitle: 'Datacamp - 2024'
 image:
-    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/cfacilito_ddr2ff.svg"
-    alt: "Cody, Codigo Facilito's pet"
-description : "Database design and normalization | Flask | Django | Web services with Django REST | Unit testing | AWS integration | Deployment on remote servers | Task automation"
+    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1716255738/portfolio/Certificates_cards-logos_nzzupb.png"
+    alt: 'Datacamp logo'
+description : "Fundamentals of Data Engineering | Advanced SQL and database design | Data warehousing | Snowflake | Data pipelines | Data visualization"
 ---
