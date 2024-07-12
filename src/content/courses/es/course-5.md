@@ -1,8 +1,8 @@
 ---
-title: 'Curso de Python 3'
-subtitle: 'Udemy - 2021'
+title: 'Associate Data Engineer in SQL'
+subtitle: 'Datacamp - 2024 (en progreso)'
 image:
-    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/udemy_qfxmgg.svg"
-    alt: 'Logo de Udemy'
-description : 'Fundamentos del lenguaje | Programación orientada a objetos | Modularización | Funciones generadores y decoradoras | Manejo de archivos'
+    url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1716255738/portfolio/Certificates_cards-logos_nzzupb.png"
+    alt: 'Logo de la plataforma Datacamp'
+description : 'Fundamentos de Data Engineering | SQL avanzado y diseño de bases de datos | Data warehousing | Snowflake | Pipelines de datos | Visualización de datos'
 ---

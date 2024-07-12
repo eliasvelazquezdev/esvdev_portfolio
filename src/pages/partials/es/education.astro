@@ -4,9 +4,9 @@ import { getCollection } from 'astro:content';
 import CourseCard from '../../../components/CourseCard.astro';
 import SectionInfo from '../../../components/SectionInfo.astro';
 
-const spanishCourseEntries = await getCollection('courses', ({ id }) => {
+const spanishCourseEntries = (await getCollection('courses', ({ id }) => {
   return id.startsWith('es/');
-});
+})).sort((a, b) => b.id.localeCompare(a.id));;
 
 ---
 <div>
