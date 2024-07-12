@@ -1,7 +1,7 @@
 ---
 title: 'VORDENTECH'
 subtitle: 'Feb 2024 - present'
-description : "US based company dedicated to the development of software solutions related to data engineering, ETL processes, and web
+description : "US based company dedicated to the development of software solutions related to Data Engineering, ETL processes, and web
 development. Among my daily tasks are: "
 tasksList: [
     "Software solutions development with Python",

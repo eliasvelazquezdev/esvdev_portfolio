@@ -1,5 +1,5 @@
 ---
-title: 'Full Stack Python'
+title: 'Full Stack Web development'
 subtitle: 'Fundación Pescar - 2022'
 image:
     url: "https://res.cloudinary.com/dwczjy8e4/image/upload/v1695153462/portfolio/pescar_ar2t1b.svg"

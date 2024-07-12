@@ -1,5 +1,6 @@
 ---
 import Social from "../components/Social.astro";
+import Modal from "../components/Modal.astro";
 import LanguageSelector from "./LanguageSelector.astro";
 const url = Astro.url.pathname;
 ---
@@ -15,17 +16,23 @@ const url = Astro.url.pathname;
             </div>
         </div>
         
-        <a href={
-            url.includes('es') ? 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_ES_szl5gs.pdf' 
+
+        <Modal 
+            btnLegend = {url.includes('es') ? 'Ver CV' : 'See resume'}
+            modalTitle = {url.includes('es') ? 'Elias Velazquez - Curriculum Vitae' : 'Elias Velazquez - Resume'}
+            btnDownload = {url.includes('es') ? 'Descargar CV' : 'Download resume'}
+            btnClose = {url.includes('es') ? 'Cerrar' : 'Close'}
+            resumePreviewLink = {url.includes('es') ? 
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1720824189/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_ES_cm36uv.png' 
                 : 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_EN_tirzhi.pdf'
-        } 
-        download target="_blank">
-            <button class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
-                {url.includes('es') ? 'Descargar CV' : 'Download resume'}
-            </button>
-        </a>
+                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1720824189/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_EN_dkdaxi.png'
+            }
+            resumeDownloadLink = {url.includes('es') ? 
+            'https://res.cloudinary.com/dwczjy8e4/image/upload/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_ES_szl5gs.pdf' 
+            : 
+            'https://res.cloudinary.com/dwczjy8e4/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_EN_tirzhi.pdf'
+        }
+        />
 
         <div class="flex flex-col">
             <div>
