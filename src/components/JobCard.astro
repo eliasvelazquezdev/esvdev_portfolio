@@ -1,10 +1,11 @@
 ---
-const {title, subtitle, description, tasksList, techStack, techLegend} = Astro.props;
-const url = Astro.url.pathname;
-
+import {marked} from "marked";
 import Badge from "./Badge.astro";
----
 
+const {title, subtitle, content, techStack, techLegend} = Astro.props;
+const htmlContent = marked(content);
+
+---
 <div class=" p-6 mb-5 rounded-lg shadow bg-zinc-800 border border-gray-600">
     <div class="mb-5">
         <h5 class="mb-2 text-2xl font-bold tracking-tight">
@@ -13,15 +14,10 @@ import Badge from "./Badge.astro";
 
         <p class="mb-2 italic text-gray-500">{subtitle}</p>
 
-        <p class="mb-3 font-normal">{description}</p>
-
-        <ul>
-            {tasksList.map((task) => (
-                <li class="list-disc ml-4">{task}</li>
-            ))}
-        </ul>
+        
+        <div class="markdown-content" set:html={htmlContent}></div>    
     </div>
-
+    
     <hr class="h-px my-5 border-0 bg-gray-700">
 
     <div class="mb-5">

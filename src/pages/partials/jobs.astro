@@ -23,8 +23,7 @@ const englishJobEntries = await getCollection('jobs', ({ id }) => {
                 <JobCard
                     title={job.data.title}
                     subtitle={job.data.subtitle}
-                    description={job.data.description}
-                    tasksList={job.data.tasksList}
+                    content = {job.body}
                     techStack={job.data.techStack}
                     techLegend={job.data.techLegend}
                 />
