@@ -1,7 +1,7 @@
 ---
 import Badge from "./Badge.astro";
 
-const {title1, title2, title3, title4} = Astro.props;
+const {title1, title2, title3} = Astro.props;
 ---
 <div class="mb-3">
     <h4 class="font-bold text-2xl mb-5">{title1}</h4>
@@ -49,15 +49,9 @@ const {title1, title2, title3, title4} = Astro.props;
 
 </div>
 
+
 <div class="mb-6">
     <h4 class="font-bold text-2xl mb-5">{title3}</h4>
-
-    <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docker/docker1.svg" alt="Docker logo"/>
-    
-</div>
-
-<div class="mb-6">
-    <h4 class="font-bold text-2xl mb-5">{title4}</h4>
 
     <!-- GIT -->
     <Badge imageURL="https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg" alt="GIT logo"/>
