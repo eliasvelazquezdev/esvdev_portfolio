@@ -7,7 +7,7 @@ const url = Astro.url.pathname;
 
 <aside class="md:col-span-3 col-span-12 mb-5">        
     <div class="mb-5 md:w-full w-10/12 mx-auto">
-        <div class="mb-3">
+        <div class="my-3">
             <img class="rounded-full border-4 mb-3 block mx-auto" src="https://res.cloudinary.com/dwczjy8e4/image/upload/v1715726681/esvdev_pic_2024_v1_lsissn.png" width="300px" alt="Elias Velazquez's photo">
             <div>
                 <h2 class="text-3xl">Elias Velazquez</h2>
@@ -18,23 +18,24 @@ const url = Astro.url.pathname;
         
 
         <Modal 
+            modalID = "modal-aside"
             btnLegend = {url.includes('es') ? 'Ver CV' : 'See resume'}
             modalTitle = {url.includes('es') ? 'Elias Velazquez - Curriculum Vitae' : 'Elias Velazquez - Resume'}
             btnDownload = {url.includes('es') ? 'Descargar CV' : 'Download resume'}
             btnClose = {url.includes('es') ? 'Cerrar' : 'Close'}
-            resumePreviewLink = {url.includes('es') ? 
+            imgLink = {url.includes('es') ? 
                 'https://res.cloudinary.com/dwczjy8e4/image/upload/v1720824189/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_ES_cm36uv.png' 
                 : 
                 'https://res.cloudinary.com/dwczjy8e4/image/upload/v1720824189/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_EN_dkdaxi.png'
             }
-            resumeDownloadLink = {url.includes('es') ? 
+            downloadLink = {url.includes('es') ? 
             'https://res.cloudinary.com/dwczjy8e4/image/upload/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_ES_szl5gs.pdf' 
             : 
             'https://res.cloudinary.com/dwczjy8e4/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1717107984/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2024_EN_tirzhi.pdf'
         }
         />
 
-        <div class="flex flex-col">
+        <div class="flex flex-col mt-3">
             <div>
                 <i class="fa-solid fa-location-dot me-2" ></i>
                 <span>Buenos Aires, Argentina</span>

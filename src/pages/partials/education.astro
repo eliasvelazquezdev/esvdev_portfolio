@@ -1,35 +1,60 @@
 ---
 export const partial = true;
 import { getCollection } from 'astro:content';
-import CourseCard from '../../components/CourseCard.astro';
 import SectionInfo from "../../components/SectionInfo.astro";
+import CertificateCard from "../../components/CertificateCard.astro";
+import CourseCard from '../../components/CourseCard.astro';
+import Separator from '../../components/Separator.astro';
 
 const englishCourseEntries = (await getCollection('courses', ({ id }) => {
   return id.startsWith('en/');
 })).sort((a, b) => b.id.localeCompare(a.id));;
 
+const certificateEntries = (await getCollection('certificates', ({ id }) => {
+  return id;
+}))
 ---
 <div>
     <SectionInfo 
         banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1695177301/portfolio/Education_yxowtp.png"
-        alt="Imagen con notebook y una mano sosteniendo una lapicera, apoyada sobre un anotador"
+        alt="Image with a notebook and a hand holding a pen, resting on a notepad"
         subtitle="ALWAYS LEARNING"
         title="Courses and certificates"
     />
 
-    {
-        englishCourseEntries.map((course => (
-            <CourseCard 
-                img={course.data.image.url}
-                title={course.data.title}
-                subtitle={course.data.subtitle}
-                description={course.data.description}
-            />
-        )))
-    }
+    <div class="mb-8">
+        <h3 class="text-2xl font-bold mb-4">Certificates</h3>
+        {
+            certificateEntries.map((certificate => (
+                <CertificateCard
+                    certificateName={certificate.data.certificateName}
+                    certificateURL={certificate.data.certificateURL}
+                    certificateAltDescription={certificate.data.certificateAltDescription}
+                />
+            )))
+        }
+    </div>
+
+    <Separator />
+
+    <div>
+        <h3 class="text-2xl font-bold mb-4">Courses</h3>
+        {
+            englishCourseEntries.map((course => (
+                <CourseCard
+                    img={course.data.image.url}
+                    title={course.data.title}
+                    subtitle={course.data.subtitle}
+                    description={course.data.description}
+                />
+            )))
+        }
+    </div>
 
     <p class="font-bold">You can see the rest of my certifications by clicking 
-        <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" class="hover:text-blue-700" target="_blank">here</a>
+        <a href="https://drive.google.com/drive/folders/1BIe74yPZU3P4QvxfE1Ir1xEZRFm9V1k_?usp=share_link" class="hover:text-blue-700" target="_blank">
+            here
+        </a>
     </p>
 
 </div>

@@ -1,0 +1,24 @@
+---
+const { certificateName, certificateURL, certificateAltDescription } = Astro.props;
+import Modal from '../components/Modal.astro';
+
+const url = Astro.url.pathname;
+---
+<div class="w-full max-w-sm bg-zinc-800 border-gray-700 border rounded-lg">
+
+    <div class="p-8 rounded-t-lg bg-cover bg-center h-48" 
+        style={`background-image: url(${certificateURL});`} 
+        aria-label={certificateAltDescription}>
+    </div>
+
+    <div class="px-5 pb-5">
+        <div class="mt-4">
+            <span class="text-xl font-bold">{certificateName}</span>
+            
+            <a href={certificateURL} target="_blank" class="absolute inset-0 z-10"></a>
+            <button id="viewButton" class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600 my-4 relative z-0" type="button">
+                {url.includes('es') ? 'Ver' : 'View'}
+            </button>
+        </div>
+    </div>
+</div>
