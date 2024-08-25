@@ -15,10 +15,11 @@ const url = Astro.url.pathname;
         <div class="mt-4">
             <span class="text-xl font-bold">{certificateName}</span>
             
-            <a href={certificateURL} target="_blank" class="absolute inset-0 z-10"></a>
-            <button id="viewButton" class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600 my-4 relative z-0" type="button">
-                {url.includes('es') ? 'Ver' : 'View'}
-            </button>
+            <a href={certificateURL} target="_blank">
+                <button id="viewButton" class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600 my-4" type="button">
+                    {url.includes('es') ? 'Ver' : 'View'}
+                </button>
+            </a>
         </div>
     </div>
 </div>
