@@ -17,23 +17,17 @@ const url = Astro.url.pathname;
         </div>
         
 
-        <Modal 
-            modalID = "modal-aside"
-            btnLegend = {url.includes('es') ? 'Ver CV' : 'See resume'}
-            modalTitle = {url.includes('es') ? 'Elias Velazquez - Curriculum Vitae' : 'Elias Velazquez - Resume'}
-            btnDownload = {url.includes('es') ? 'Descargar CV' : 'Download resume'}
-            btnClose = {url.includes('es') ? 'Cerrar' : 'Close'}
-            imgLink = {url.includes('es') ? 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1729804382/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2025_ES_huwqlq_aorn0j.png' 
+        <a href={
+            url.includes('es') ? 
+                "elias_velazquez_curriculum.pdf" 
                 : 
-                'https://res.cloudinary.com/dwczjy8e4/image/upload/v1729804430/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2025_EN_dcic1s_jplkem.png'
-            }
-            downloadLink = {url.includes('es') ? 
-            'https://res.cloudinary.com/dwczjy8e4/image/upload/v1729804282/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2025_ES_huwqlq.pdf' 
-            : 
-            'https://res.cloudinary.com/dwczjy8e4/image/upload/v1729804281/resume/Elias_Velazquez_-_Python_ETL_Dev_-_2025_EN_dcic1s.pdf'
-        }
-        />
+                "elias_velazquez_resume.pdf"
+        } 
+        download target="_blank">
+            <button class="border-2 border-[#758292] rounded-lg p-2 mb-3 w-full bg-zinc-700 hover:bg-zinc-600">
+                {url.includes('es') ? 'Descargar CV' : 'Download resume'}
+            </button>
+        </a>
 
         <div class="flex flex-col mt-3">
             <div>

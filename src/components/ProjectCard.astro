@@ -19,16 +19,26 @@ console.log(url)
     <hr class="h-px my-5 border-0 bg-gray-700">
 
     <div class="mb-5">
-        <p class="mb-2 font-bold">{techLegend}</p>
+        {
+            techLegend != undefined ? 
+            <p class="mb-2 font-bold">{techLegend}</p>
+            :
+            <span></span>
+        }
 
-        <div>
+        {
+            techStack != undefined ? 
+            <div>
             {
                 techStack.map((tech => (
                     <Badge imageURL={tech} classes="h-5 me-2"/>
                 )))
             }
-
-        </div>
+            </div>
+            :
+            <span></span>
+        }
+        
         
     </div>
 
