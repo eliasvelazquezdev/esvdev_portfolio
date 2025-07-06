@@ -5,6 +5,7 @@ techStack : [
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg", 
     "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white", 
     "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+    "https://img.shields.io/badge/snowflake-%2329B5E8.svg?style=for-the-badge&logo=snowflake&logoColor=white",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/PostgreSQL/postgresql1.svg",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Postman/postman1.svg",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg",
@@ -15,14 +16,35 @@ techStack : [
 techLegend : "Languages and tools used"
 ---
 
-US based company dedicated to the development of software solutions related to Data Engineering, ETL processes, and web development. Among my daily tasks are:
+Since February 2024, I’ve been working as a **Data Engineer at [Vordentech](https://www.vordentech.com/)** — a full-stack data consulting firm with a global client base. My day-to-day involves solving real-world problems with Python, data pipelines, and a bit of AWS magic. Here’s a snapshot of what I’ve been up to:
 
-- **💻 Software solutions development with Python:** Developed software solutions in Python, including a custom permissions framework using Gremlin Python and AWS Neptune for secure access control. Also implemented backend code for a desktop app that allowed users to map and validate CSV data for transformation and storage in a relational database.
 
-- **🔄 Data extraction, transformation, and loading (ETL) processes:** Executed data extraction, transformation, and loading (ETL) processes by consuming data from APIs and Google Sheets, applying transformations and calculations using Pandas. Designed a scalable and maintainable database schema, ensuring seamless data integration into a relational database.
+### 🧠 Python & Backend Development  
+I’ve developed Python software solutions that solve actual problems — not just look pretty in a repo. Highlights include:
+- Creating a custom permissions framework using **Gremlin Python** and **AWS Neptune** for fine-grained, secure access control.
+- Writing backend logic for a desktop app that lets users map and validate CSV data, transform it, and store it in a relational database without screaming at their screen.
 
-- **☁️ Solutions on AWS leveraging various serverless services:** Deployed and managed AWS Lambda functions via the AWS CLI, implementing least privilege permissions to securely access services such as RDS for executing ETL processes. Utilized AWS Step Functions and EventBridge to orchestrate and schedule multiple serverless functions, ensuring timely execution and correct sequencing for efficient data processing in a cloud environment. Integrated AWS Lambda, and API Gateway to develop a Snowflake infrastructure solution, tackling challenges related to Snowflake security and API management and meeting tight deadlines while exceeding client expectations by proposing and implementing security improvements.
+<br>
 
-- **🗣️ Communication with clients:** Liaised with clients globally, effectively clarifying ambiguous requirements leveraging strong communication skills in English (non-native) through text and voice channels, ensuring a clear understanding of their business needs and delivering tailored solutions.
+### 🔄 Data Engineering (ETL Pipelines)  
+Built and optimized **ETL pipelines** by consuming data from APIs and Google Sheets, applying logic and transformations with **Pandas**, and designing maintainable database schemas. The result? A **15% boost in processing speed** and cleaner data
 
-- **🤝 Collaborative development:** Worked closely with other developers to define and establish tasks through effective communication and teamwork. Regularly sought and offered assistance to ensure smooth project progress. Emphasized the use of clear and detailed Git commit messages to create a robust project log, aiding both my colleagues and my future self in maintaining and contributing to the project efficiently.
+<br>
+
+### ☁️ Cloud Solutions (AWS + Snowflake Integration)  
+I spend a lot of time in the cloud — specifically:
+- Orchestrating workflows with **Step Functions** and **EventBridge**, coordinating multiple **Lambda functions** to handle data processing tasks.
+- Deploying serverless infrastructure via the **AWS CLI**, always applying the **least privilege principle** because I like my systems secure.
+- Developed and delivered a Snowflake infrastructure solution integrating **Python, Lambda, and API Gateway**, reducing security risks by 20% and improving response times. Bonus: finished it before the deadline and got some happy client messages 🎯.
+- Lately, I’ve also been collaborating with **Milemarker** through Vordentech, helping them architect a scalable data platform. I refactored their main pipeline for significant **performance and cost improvements**, and created new integrations using **API Gateway + Lambda** to connect several systems to this core pipeline. This has also involved writing technical documents like **Statements of Work (SOW)**, where I present the **business case** and proposed **technical solution** before starting any new project. I’ve had the opportunity to discuss these directly with their CTO — which has taught me a lot about bridging tech and business strategy.
+
+<br>
+
+### 🗣️ Client Communication (in English, no less!)  
+I work directly with international clients, helping them figure out what they *actually* need (even when they’re not 100% sure themselves). I communicate clearly via text and voice in **English** (not my native language), making sure requirements are fully understood before building anything. Less guesswork, more solutions.
+
+<br>
+
+### 🤝 Team Collaboration  
+I believe tech is a team sport. I work closely with other devs to define tasks, give and receive feedback, and keep things moving forward. I’m that person who writes **clear, useful Git commit messages** (future me is very thankful), and I regularly review PRs to help maintain high code quality across the board.
+

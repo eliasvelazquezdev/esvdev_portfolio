@@ -5,6 +5,7 @@ techStack : [
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Python/python3.svg", 
     "https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white", 
     "https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white",
+    "https://img.shields.io/badge/snowflake-%2329B5E8.svg?style=for-the-badge&logo=snowflake&logoColor=white",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/PostgreSQL/postgresql1.svg",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Postman/postman1.svg",
     "https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg",
@@ -14,15 +15,33 @@ techStack : [
 ]
 techLegend : "Lenguajes y herramientas utilizadas"
 ---
-Compañía estadounidense dedicada al desarrollo de soluciones de software relacionadas con Ingeniería de Datos, procesos
-ETL y desarrollo web. Entre mis tareas diarias se encuentran:
+Desde febrero de 2024 me encuentro trabajando como **Data Engineer** en [Vordentech](https://www.vordentech.com/), una empresa de consultoría de datos con clientes en todo el mundo. Mi día a día involucra resolver problemas reales con Python, data pipelines y un poco de magia de AWS. Aquí hay un resumen de lo que he estado haciendo:
 
-- **💻 Desarrollo de soluciones de software con Python**, incluyendo un marco de permisos personalizado utilizando Gremlin Python y AWS Neptune para un control de acceso seguro. También implementé el código backend para una aplicación de escritorio que permitía a los usuarios mapear y validar datos de archivos CSV para su transformación y almacenamiento en una base de datos relacional.
+### 🧠 Python y Desarrollo Backend
+Desarrollé soluciones en Python que resuelven problemas reales, como:
+- Crear un marco de permisos personalizado utilizando **Gremlin Python** y **AWS Neptune** para un control de acceso seguro.
+- Escribir lógica backend para una aplicación de escritorio que permite a los usuarios mapear y validar datos de archivos CSV para su transformación y almacenamiento en una base de datos relacional, sin que tengan que gritarle a la pantalla.
 
-- **🔄 Procesos de extracción, transformación y carga de datos (ETL):** Ejecuté procesos de extracción, transformación y carga (ETL) de datos consumiendo datos de APIs y Google Sheets, aplicando transformaciones y cálculos utilizando Pandas. Diseñé un esquema de base de datos escalable y mantenible, asegurando una integración fluida de los datos en una base de datos relacional.
+<br>
 
-- **☁️ Soluciones en AWS aprovechando varios servicios serverless:** Desplegué y gestioné funciones de AWS Lambda a través del AWS CLI y la interfaz web, implementando permisos de menor privilegio para acceder de manera segura a servicios como RDS para la ejecución de procesos ETL. Utilicé AWS Step Functions y EventBridge para orquestar y programar dichas funciones, garantizando la ejecución oportuna y la correcta secuenciación para un procesamiento eficiente de datos en un entorno en la nube. Desarrollé una solución de infraestructura en Snowflake, integrando AWS Lambda y API Gateway. Enfrenté desafíos relacionados con la seguridad de Snowflake y la gestión de APIs, cumpliendo con plazos ajustados y superando las expectativas del cliente al proponer e implementar mejoras de seguridad.
+### 🔄 Data Engineering (ETL Pipelines)  
+Construí y optimicé **pipelines ETL** consumiendo datos de APIs y Google Sheets, aplicando transformaciones y cálculos con **Pandas** y diseñando esquemas de base de datos escalables y mantenibles. El resultado? Un **aumento del 15% en la velocidad de procesamiento** y datos más limpios.
 
-- **🗣️ Comunicación con clientes:** Me comuniqué de manera activa en inglés con clientes de distintos países para aclarar requisitos poco claros, comprendiendo sus necesidades de negocio a través de múltiples canales, incluidos mensajes de texto y llamadas de voz, asegurando la entrega de soluciones a medida.
+<br>
 
-- **🤝 Desarrollo colaborativo:** Trabajé estrechamente con otros desarrolladores para definir y establecer tareas mediante una comunicación y colaboración efectivas. Regularmente solicité y ofrecí asistencia para asegurar el progreso fluido del proyecto. Enfaticé el uso de mensajes claros y detallados en los commits de Git para crear un registro sólido del proyecto, que ayude tanto a mis colegas como a mi yo futuro a mantener y contribuir al proyecto de manera eficiente.
+### ☁️ Soluciones Cloud (AWS + Snowflake)  
+Me la paso en la nube, específicamente:
+- Orquestando flujos de trabajo con **Step Functions** y **EventBridge**, coordinando múltiples **Lambda functions** para manejar tareas de procesamiento de datos.
+- Desplegando infraestructura serverless a través del **AWS CLI**, siempre aplicando el **principio de menor privilegio** porque me gusta que mis sistemas sean seguros.
+- Desarrollé y entregué una solución de infraestructura en Snowflake, integrando **Python, Lambda y API Gateway**, reduciendo riesgos de seguridad en un 20% y mejorando los tiempos de respuesta. Bonus: terminé antes de la fecha límite y recibí algunos mensajes felices del cliente 🎯.
+- Últimamente estuve colaborando con la empresa Milemarker a través de Vordentech, ayudándola a crear una plataforma de datos escalable. Refactoricé su pipeline principal para mejoras significativas en rendimiento y costos, y creé nuevas integraciones usando **API Gateway + Lambda** para conectar varios sistemas a este pipeline principal. Esto también involucró escribir documentos técnicos como **Statements of Work (SOW)**, donde presento el **caso de negocio** y la **solución técnica** propuesta antes de iniciar cualquier nuevo proyecto. Tuve la oportunidad de discutir estos directamente con su CTO, lo que me ha enseñado mucho sobre cómo combinar estrategia técnica y de negocios.
+
+<br>
+
+### 🗣️ Comunicación con Clientes (en Inglés)
+Trabajo directamente con clientes internacionales, ayudándolos a entender qué **realmente** necesitan (incluso cuando no están 100% seguros de lo que necesitan). Me comunico con claridad a través de texto y voz en **inglés**, asegurándome de que se entiendan completamente los requisitos antes de construir cualquier cosa. Menos suposiciones, más soluciones.
+
+<br>
+
+### 🤝 Colaboración en equipo
+Soy de la firme creencia de que trabajar en tecnología es un deporte de equipo. Trabajo estrechamente con otros desarrolladores para definir tareas, dar y recibir feedback, y mantener las cosas en movimiento. Soy la persona que escribe **mensajes claros y útiles en Git** (mi futuro yo está muy agradecido), y reviso PRs regularmente para ayudar a mantener la calidad del código en todo el equipo.
