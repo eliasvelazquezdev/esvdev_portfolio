@@ -16,5 +16,20 @@ export default defineConfig({
     }
   },
 
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+        interval: 1000,
+        ignored: [
+          '**/node_modules/**',
+          '**/.git/**',
+          '**/dist/**',
+          '**/.astro/**'
+        ]
+      }
+    }
+  },
+
   integrations: [tailwind()]
 });

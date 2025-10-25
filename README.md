@@ -1,4 +1,4 @@
-![image](https://github.com/eliasvelazquezdev/esvdev_portfolio/assets/87088600/11911237-ebaa-4cd8-b8b0-62367d45645b)
+![image](https://res.cloudinary.com/dwczjy8e4/image/upload/v1761412600/portfolio/evelazquez-dev-screenshot-2025_vpftwp.png)
 
 # Personal website
 
