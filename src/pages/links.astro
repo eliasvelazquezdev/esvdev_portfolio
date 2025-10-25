@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Aside from "../components/Aside.astro";
+import SectionInfo from "../components/SectionInfo.astro";
+import Separator from "../components/Separator.astro";
+
+const pageTitle = "Links"
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="flex-row md:flex-row grid grid-cols-12 gap-4">            
+        <main class="col-span-12"> 
+            <section class="p-3 lg:p-8 border-2 border-[#444c56] rounded md:min-h-screen">
+                <SectionInfo 
+                    banner="https://res.cloudinary.com/dwczjy8e4/image/upload/v1761410440/portfolio/esvdev_links_banner_enerxu.png"
+                    alt="Links and social connections"
+                    subtitle="ALL MY LINKS"
+                    title="Connect with me"
+                />
+
+                <div class="max-w-2xl mx-auto">
+                    <!-- Professional Links -->
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Professional</h3>
+                        
+                        <a href="https://evelazquez.dev" target="_blank" class="block w-full mb-4 p-4 bg-[#5a5d5f] hover:bg-[#434647] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">My Website</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/eliassvelazquez" target="_blank" class="block w-full mb-4 p-4 bg-[#0077B5] hover:bg-[#005885] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-brands fa-linkedin text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">LinkedIn</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/eliasvelazquezdev" target="_blank" class="block w-full mb-4 p-4 bg-[#333] hover:bg-[#24292e] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-brands fa-github text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">GitHub</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <Separator />
+
+                    <!-- Content & Community -->
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Content & Community</h3>
+
+                        <a href="https://elingenieroconsciente.substack.com" target="_blank" class="block w-full mb-4 p-4 bg-[#FF6B35] hover:bg-[#E55A2E] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-regular fa-envelope text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">My Substack Newsletter</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.esvdev.me" target="_blank" class="block w-full mb-4 p-4 bg-[#263f75] hover:bg-[#223763] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-solid fa-book-open-reader text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">Tech Blog</span>
+                            </div>
+                        </a>
+
+                        <a href="https://shareit.lat" target="_blank" class="block w-full mb-4 p-4 bg-[#1b98e0] hover:bg-[#1a83c0] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-solid fa-people-group text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">ShareIT Community</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <Separator />
+
+                    <!-- Social Media -->
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Social Media</h3>
+                        
+                        <a href="https://www.x.com/esvdev" target="_blank" class="block w-full mb-4 p-4 bg-[#484949] hover:bg-[#363636] rounded-lg transition-colors duration-200">
+                            <div class="flex items-center justify-center">
+                                <i class="fa-brands fa-x-twitter text-2xl mr-3"></i>
+                                <span class="text-lg font-semibold">X (Twitter)</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center mt-8">
+                        <p class="text-lg mb-4">Want to collaborate or just say hi?</p>
+                        <a href="mailto:elias@evelazquez.dev" class="inline-flex items-center px-6 py-3 text-lg font-medium text-center text-white bg-blue-800 rounded-lg hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Get in touch
+                            <i class="fa-regular fa-envelope ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</BaseLayout>
